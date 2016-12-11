@@ -4,7 +4,7 @@ input = data/finite.root
 logy = true
 legend = true
 
-regex = sn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi))//scale=1,width
+regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi))//scale=1,width
 regex = ng
 regex = nt
 regex = fl/data\/(.*).root$/\1

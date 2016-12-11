@@ -2,7 +2,7 @@ input = data/ratio.root
 
 # logy = true
 
-regex = sn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi))
+regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi))
 regex = ng
 regex = nt
 regex = y/^.*/infinite \/ finite
