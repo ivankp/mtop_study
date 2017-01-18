@@ -17,7 +17,7 @@ data/ratio.root: bin/ratio
 	$< data/inf.root data/finite.root $@
 
 clean:
-	rm -fv $(PDF)
+	@rm -fv $(PDF)
 
 $(RATIOS): data/ratio.root
 

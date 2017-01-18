@@ -3,13 +3,11 @@ input = data/inf.root
 logy = true
 legend = true
 
-# regex = sng/^(x[H12])_.*_(dycut_\d)/\1_\2
-regex = sng/^(x[H12])_.*_(dycut_\d)/\1_\2/scale=1,width
-regex = nl/.*HT_([0-9]+)-([0-9]+).*/\1 < HT < \2
-regex = gt/_dycut_0/
-regex = t/_dycut_(\d)/ : dy < \1
-regex = y/^.*/d**sigma\/dy [pb]
-regex = x/^.*/y
+regex = sng/^(x[H12])_HT_\[.*\)_maxdy_\[(.*)\)/\1_\2/scale=1,width
+regex = nl/.*HT_\[([0-9]+),([0-9]+)\).*/\1 **leq HT < \2
+regex = gt/(.*)_(.*),(.*)/\1  :  \2 **leq max dy < \3
+regex = xy/^.*/d**sigma\/d& [pb]
+# regex = x/^.*/y
 
 margins = 0.09:0.05:0.1:0.09
 ytitle-offset = 1.1

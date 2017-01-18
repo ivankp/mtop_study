@@ -95,6 +95,12 @@ void dir_loop(TDirectory* dir1, TDirectory* dir2) {
 };
 
 int main(int argc, char** argv) {
+  if (argc!=4) {
+    cout << "usage: " << argv[0]
+         << " top.root bottom.root ratio.root" << endl;
+    return 1;
+  }
+
   auto fin1 = std::make_unique<TFile>(argv[1],"read");
   if (fin1->IsZombie()) return 1;
   auto fin2 = std::make_unique<TFile>(argv[2],"read");
