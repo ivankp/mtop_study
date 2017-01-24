@@ -13,3 +13,5 @@ regex = yz+/x(.*)/dx_{\1} [pb]
 
 margins = 0.09:0.125:0.1:0.09
 ytitle-offset = 1.1
+
+interlace = 2

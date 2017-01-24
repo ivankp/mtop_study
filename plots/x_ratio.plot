@@ -3,14 +3,17 @@ input = data/ratio.root
 logy = true
 legend = true
 
-regex = sng/^(x[H12])_HT_\[[^_]*\)(.*)/\1\2
+regex = sng/^(|[gq][gq]_)(x[H12])_HT_\[[^_]*\)(.*)/\1\2\3
 
-regex = gt/^(x[H12])_maxdy_\[([0-9]+),([0-9]+)\).*/\1 : \2 **leq max **Deltay < \3
+regex = gt/^([gq][gq])_(.*)/\1  \2
+
+regex = t/^(.*)_maxdy_\[([0-9]+),([0-9]+)\).*/\1 : \2 **leq max **Deltay < \3
 
 regex = nl/.*HT_\[([0-9]+),([0-9]+)\).*/\1 **leq HT < \2
+regex = x/.*(x[H12])/\1
 regex = y/.*/infinite \/ finite
 
-yrange = 0.4:2.5
+yrange = 0.2:5
 mlogy = true
 noexpy = true
 
