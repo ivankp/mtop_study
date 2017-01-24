@@ -2,7 +2,7 @@ input = data/ratio.root
 
 # logy = true
 
-regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi))
+regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi|mass))
 regex = ng
 regex = nt
 regex = y/^.*/infinite \/ finite
@@ -15,9 +15,12 @@ regex = x/^H( )/Higgs\1
 regex = x/(.*)_dpT/\1 **Deltap_{T} [GeV]
 regex = x/(.*)_dy/\1 **Deltay
 regex = x/(.*)_dphi/\1 **Delta**phi
+regex = x/jjfb_mass/\1 Forward-backward dijet mass
 regex = x/^jjfb/Forward-backward jets
 
 
 margins = 0.09:0.05:0.1:0.09
 ytitle-offset = 1.1
 xtitle-offset = 1.25
+
+hline = 1

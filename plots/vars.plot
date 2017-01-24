@@ -4,7 +4,7 @@ input = data/finite.root
 logy = true
 legend = true
 
-regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi))//scale=1,width
+regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jjfb_(dpT|dy|dphi|mass))//scale=1,width
 regex = ng
 regex = nt
 regex = fl/data\/(.*).root$/\1
@@ -26,6 +26,7 @@ regex = x/^H( )/Higgs\1
 regex = x/(.*)_dpT/\1 **Deltap_{T} [GeV]
 regex = x/(.*)_dy/\1 **Deltay
 regex = x/(.*)_dphi/\1 **Delta**phi
+regex = x/jjfb_mass/\1 Forward-backward dijet mass
 regex = x/^jjfb/Forward-backward jets
 
 margins = 0.09:0.05:0.1:0.09
