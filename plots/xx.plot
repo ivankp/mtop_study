@@ -3,8 +3,12 @@ input = data/finite.root
 
 # logz = true
 
-regex = sn/^x[H12]_x[H12]_HT_.*//scale=1,width/draw=colz
+regex = sn/^x[H12]_x[H12]_HT\[[^_]*\)//scale=1,width/draw=colz
 regex = ng
+
+regex = gx/^(x[H12])_(x[H12]).*/\1
+regex = gy/^(x[H12])_(x[H12]).*/\2
+
 regex = f+g/.*\/(.*)\.root/\1_
 regex = gt
 

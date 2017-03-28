@@ -1,13 +1,12 @@
 input = data/ratio.root
 
 logy = true
-# legend = true
 
-regex = sn/^x1_HT_.*
+regex = sn/^([gq][gq]_)?x1_HT.*
 regex = ng
 regex = nt
 regex = y/^.*/infinite \/ finite
-# regex = x/^.*/y
+regex = x/^.*/x1
 
 #yrange = 0.333333:3
 yrange = 0.4:2.5

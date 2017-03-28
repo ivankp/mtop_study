@@ -4,12 +4,12 @@ input = data/finite.root
 logy = true
 legend = true
 
-regex = sng/^(|[gq][gq]_)(x2_HT_.*)/\2/scale=1,width
+regex = sng/^([gq][gq]_)?(x2_HT\[[^_]*\)(_maxdy[^_]+)?)/\2/scale=1,width
 regex = gt
 regex = fl/data\/(.*).root$/\1
 regex = nl+/^([gq][gq]|).*/ \1
 regex = y/^.*/d**sigma\/dx_{2} [pb]
-# regex = x/^.*/y
+regex = x/^.*/x2
 
 margins = 0.09:0.05:0.1:0.09
 ytitle-offset = 1.1

@@ -3,13 +3,13 @@ input = data/finite.root
 
 # logz = true
 
-regex = sn/^maxdy_maxdphi_HT_.*//scale=1,width/draw=colz2
+regex = sn/^maxdy_maxdphi_HT\[.*//scale=1,width/draw=colz2
 regex = ng
 regex = f+g/.*\/(.*)\.root/\1_
 regex = gt
 
-regex = x/maxdy/max **Deltay
-regex = y/maxdphi/max **Delta**phi
+regex = x/^.*/max **Deltay
+regex = y/^.*/max **Delta**phi
 
 regex = xz/^.*/d**sigma\/d(&)
 regex = yz+/^.*/d(&) [pb]

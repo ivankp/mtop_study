@@ -3,9 +3,9 @@ input = data/ratio.root
 # logy = true
 legend = true
 
-regex = sn/^[^_]*_pT_x[^_]_.*
+regex = sn/^[^_]*_pT_x[^_]\[[^_]*\)
 regex = ng
-regex = nt/^([^_]*_pT)_(x[^_])_([.0-9]+)-([.0-9]+)/\1 : \3 < \2 < \4
+regex = nt/^([^_]*_pT)_(x[^_])\[([.0-9]+),([.0-9]+)\)/\1 : \3 < \2 < \4
 regex = y/^.*/infinite \/ finite
 regex = nx/^([^_]*)_.*/\1 pT [GeV]
 regex = x/^H( )/Higgs\1

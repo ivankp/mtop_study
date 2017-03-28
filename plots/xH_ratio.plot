@@ -1,13 +1,17 @@
 input = data/ratio.root
 
-# logy = true
-# legend = true
+logy = true
 
-regex = sn/^xH_HT_.*
+regex = sn/^([gq][gq]_)?xH_HT.*
 regex = ng
 regex = nt
 regex = y/^.*/infinite \/ finite
-# regex = x/^.*/y
+regex = x/^.*/xH
+
+#yrange = 0.333333:3
+yrange = 0.4:2.5
+mlogy = true
+noexpy = true
 
 margins = 0.09:0.05:0.1:0.09
 ytitle-offset = 1.1

@@ -1,16 +1,12 @@
-PDF := $(patsubst plots/%.plot,%.pdf,$(wildcard plots/*.plot))
-RATIOS := $(filter %_ratio.pdf,$(PDF))
+HJ := $(wildcard H?j)
 
-all: $(PDF)
+.PHONY: all $(HJ)
 
-$(PDF): %.pdf: plots/%.plot
-	rxplot -c $< -o $@
+all: $(HJ)
 
-data/ratio.root:
-	hrat data/inf.root data/finite.root $@
+$(HJ):
+	$(MAKE) -C $@
 
 clean:
-	@rm -fv $(PDF)
-
-$(RATIOS): data/ratio.root
+	for hj in $(HJ); do $(MAKE) -C $$hj clean; done
 

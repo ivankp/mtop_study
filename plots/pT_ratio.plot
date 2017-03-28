@@ -3,11 +3,11 @@ input = data/ratio.root
 logy = true
 legend = br
 
-regex = sng/^(H|jet[1-3])_pT_(x[H12])_\[[^_]*\)/\1_\2
+regex = sng/^(H|jet[1-3])_pT_(x[H12])\[[^_]*\)/\1_\2
 
 regex = gt/(.*)_(.*)/\1 pT -- \2
 
-regex = nl/.*_(x[H12])_\[([.0-9]+),([.0-9]+)\)/\2 **leq \1 < \3
+regex = nl/.*_(x[H12])\[([.0-9]+),([.0-9]+)\)/\2 **leq \1 < \3
 
 regex = y/.*/infinite \/ finite
 regex = nx/^([^_]*)_.*/\1 pT [GeV]
