@@ -2,7 +2,7 @@ input = data/ratio.root
 
 # logy = true
 
-regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jj(fb)?_(dpT|dy|dphi|mass)|Hjets_mass)
+regex = smn/(HT|(H|jet[12])_(pT|eta|y)|jj(fb)?_(dpT|dy|dphi|mass)|Hjets_mass(_close)?)
 regex = ng
 regex = nt
 regex = y/^.*/infinite \/ finite
@@ -16,7 +16,7 @@ regex = x/(.*)_dpT/\1 **Deltap_{T} [GeV]
 regex = x/(.*)_dy/\1 **Deltay
 regex = x/(.*)_dphi/\1 **Delta**phi
 regex = x/jjfb_mass/\1 Forward-backward dijet mass [GeV]
-regex = x/Hjets_mass/Mass of Higgs + all jets system [GeV]
+regex = x/Hjets_mass(_close)?/Mass of Higgs + all jets system [GeV]
 regex = x/^jjfb/Forward-backward jets
 
 
